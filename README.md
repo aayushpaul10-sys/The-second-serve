@@ -1,16 +1,26 @@
 # The Second Serve Website
 
-This is a first, responsive one-page website for The Second Serve.
-
-## Before publishing
-1. Replace `YOUR_EMAIL_HERE` in `index.html` with the real project email address.
-2. Review all wording and confirm organizational claims.
-3. Replace or add photos if desired.
-4. Connect a domain and hosting provider.
-5. Add a real contact form or email workflow if desired.
+Static multi-page website for GitHub Pages.
 
 ## Files
-- `index.html` — site content and structure
-- `styles.css` — responsive design
-- `script.js` — mobile navigation
-- `logo.png` — supplied The Second Serve logo
+- index.html — Home
+- about.html — About
+- partner.html — Partner With Us
+- sponsors.html — Sponsors
+- founders.html — Founders
+- donate.html — Donate
+- styles.css — all site styling
+- script.js — mobile navigation + current year
+- assets/ — supplied logo and founder photos
+
+## GitHub Pages
+Upload the contents of this folder to the root of the GitHub repository that is connected to GitHub Pages.
+
+## Easy edits
+Most wording is directly inside the HTML files. Colors, spacing, fonts, cards, and responsive behavior are in `styles.css`.
+
+## Important links
+Partner form: https://forms.gle/koKUqjM5hnuKmF2D8
+Donation page: https://hcb.hackclub.com/donations/start/the-second-serve
+Instagram: https://www.instagram.com/The_SecondServe/
+RecycleBalls: https://www.recycleballs.org/
