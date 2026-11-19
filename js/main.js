@@ -9,7 +9,7 @@ const SITE_CONFIG = {
   shipmentsCompleted: 1,
   packagesSent: 2,
   // Update these once confirmed before launch:
-  donateUrl: "https://hcb.hackclub.com/donations/start/the-second-serve"
+  donateUrl: "https://hcb.hackclub.com/donations/start/the-second-serve",
   contactEmail: "contact@thesecondserve.org",
   contactPhone: ""
 };
