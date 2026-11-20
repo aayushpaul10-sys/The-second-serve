@@ -4,89 +4,117 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Donate | The Second Serve</title>
-  <meta name="description" content="Donate to The Second Serve to help pay for shipping, boxes, and supplies to keep tennis ball collection free." />
-  <link rel="icon" type="image/png" href="assets/logo.png" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="description" content="Donate to The Second Serve to keep tennis ball collection free for facilities in Southwest Michigan." />
+  <meta name="theme-color" content="#1E382B" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self' https://hcb.hackclub.com" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800&display=swap" />
+  <link rel="stylesheet" href="css/site.css" />
+  <script src="js/site.js" defer></script>
+  <noscript><style>.reveal-up{opacity:1!important;transform:none!important;filter:none!important}.mobile-menu{display:none!important}</style></noscript>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-bar">
-      <a href="index.html" class="wordmark">
-        <span class="wordmark-dot" aria-hidden="true"></span>
-        <span>The Second Serve</span>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="wrap header-bar">
+      <a href="index.html" class="brand" aria-label="The Second Serve home">
+        <span class="brand-name">The Sec<img src="assets/ball.svg" alt="" class="brand-o" width="20" height="20" />nd Serve</span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button>
-      <nav aria-label="Primary Navigation">
-        <ul class="nav-links" id="primary-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="founders.html">Founders</a></li>
-          <li><a href="our-work.html">Our Work</a></li>
-          <li><a href="partner.html">Partner With Us</a></li>
-          <li><a href="sponsors.html">Sponsors</a></li>
-          <li><a href="donate.html" class="nav-donate" aria-current="page">Donate</a></li>
-        </ul>
+      <nav class="nav" aria-label="Primary">
+        <a href="about.html">About</a>
+        <a href="index.html#how">How it works</a>
+        <a href="our-work.html">Our work</a>
+        <a href="founders.html">Founders</a>
+        <a href="sponsors.html">Sponsors</a>
       </nav>
+      <div class="header-actions">
+        <a href="donate.html" class="btn btn-ghost btn-sm hide-sm">Donate</a>
+        <a href="partner.html" class="btn btn-ball btn-sm hide-sm">Partner with us</a>
+        <a href="donate.html" class="btn btn-ball btn-sm show-sm">Donate</a>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-btn>
+          <span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+          <span class="menu-label">Menu</span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" data-menu hidden>
+      <nav class="mobile-nav" aria-label="Mobile">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="index.html#how">How it works</a>
+        <a href="our-work.html">Our work</a>
+        <a href="founders.html">Founders</a>
+        <a href="sponsors.html">Sponsors</a>
+      </nav>
+      <div class="mobile-cta">
+        <a href="partner.html" class="btn btn-ball btn-block">Partner with us</a>
+        <a href="donate.html" class="btn btn-ghost btn-block">Donate</a>
+      </div>
     </div>
   </header>
 
-  <main>
-    <section class="page-header">
-      <div class="container">
-        <h1>Donate</h1>
-        <p>If you support our mission, we encourage you to donate! Donations help The Second Serve continue to pack and ship balls for free. Donated funds help us pay for shipping, boxes, and other shipping supplies.</p>
+  <main id="main">
+    <section class="page-hero court">
+      <div class="court-lines" aria-hidden="true">
+        <div class="court-landscape"><i class="h" style="--x:3;--y:24;--l:94;--dl:0s"></i><i class="v" style="--x:3;--y:24;--l:76;--dl:0.05s"></i><i class="v" style="--x:97;--y:24;--l:76;--dl:0.05s"></i><i class="h" style="--x:3;--y:42;--l:94;--dl:0.15s"></i><i class="v" style="--x:70;--y:42;--l:58;--dl:0.3s"></i><i class="h" style="--x:70;--y:71;--l:27;--dl:0.45s"></i></div>
+        <div class="court-portrait"><i class="h" style="--x:5;--y:22;--l:90;--dl:0s"></i><i class="v" style="--x:5;--y:22;--l:78;--dl:0.05s"></i><i class="v" style="--x:95;--y:22;--l:78;--dl:0.05s"></i><i class="v" style="--x:13;--y:22;--l:78;--dl:0.15s"></i><i class="v" style="--x:87;--y:22;--l:78;--dl:0.15s"></i></div>
+      </div>
+      <div class="wrap">
+        <div class="page-hero-copy">
+          <h1 class="page-title" data-split>Donate</h1>
+          <p class="page-lede reveal" style="--d: .45s">Donations keep pickup and shipping free for every facility we work with.</p>
+        </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container">
-        <div class="donate-panel">
-          <h2>Support Free Tennis Ball Collection</h2>
-          <p>The Second Serve is a 501(c)(3) fiscally sponsored project. Every contribution goes directly toward shipping labels, heavy-duty boxes, and packing supplies needed to send collected balls to RecycleBalls.</p>
-          <div class="btn-group">
-            <a id="primary-donate-btn" href="https://hcb.hackclub.com/donations/start/the-second-serve" target="_blank" rel="noopener noreferrer" class="btn btn-accent">Donate Now</a>
-          </div>
-          <p class="donate-note">You will be redirected to HCB&rsquo;s website, the organization that fiscally sponsors The Second Serve, to complete your donation.</p>
+      <div class="wrap split">
+        <div class="donate-panel reveal-up">
+          <h2>Support free tennis ball collection</h2>
+          <p>Every dollar goes toward shipping labels, heavy-duty boxes and packing supplies for sending collected balls to RecycleBalls.</p>
+          <a id="primary-donate-btn" href="https://hcb.hackclub.com/donations/start/the-second-serve" target="_blank" rel="noopener noreferrer" class="btn btn-ball btn-lg btn-fx" data-magnet><span class="btn-fill" aria-hidden="true"></span><span class="btn-text">Donate on HCB</span></a>
+          <p class="donate-note">You’ll finish your donation on HCB’s website. HCB is our fiscal sponsor and part of The Hack Foundation, a 501(c)(3) nonprofit.</p>
         </div>
+        <figure class="split-photo reveal-clip"><img src="assets/packing.jpg" alt="Taping up a box of 250 balls for shipping" width="1200" height="1600" loading="lazy" data-parallax /></figure>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
+    <div class="wrap">
       <div class="footer-grid">
-        <div>
-          <div class="footer-brand">The Second Serve</div>
-          <p class="footer-text">A 501(c)(3) fiscally sponsored project reducing tennis ball landfill waste in Southwest Michigan.</p>
-          <p class="footer-text">Recycling partner: <a href="https://www.recycleballs.org/" target="_blank" rel="noopener noreferrer">RecycleBalls</a></p>
+        <div class="footer-brand">
+          <a href="index.html" class="brand" aria-label="The Second Serve home"><span class="brand-name">The Sec<img src="assets/ball.svg" alt="" class="brand-o" width="20" height="20" />nd Serve</span></a>
+          <p>Recycling tennis balls in Southwest Michigan. Recycling partner: <a href="https://www.recycleballs.org/" target="_blank" rel="noopener noreferrer">RecycleBalls</a>.</p>
         </div>
-        <div>
-          <div class="footer-heading">Pages</div>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About The Second Serve</a></li>
-            <li><a href="founders.html">The Founders</a></li>
-            <li><a href="our-work.html">Our Work</a></li>
-          </ul>
+        <div class="footer-col">
+          <h2>Learn</h2>
+          <a href="about.html">About</a>
+          <a href="founders.html">Founders</a>
+          <a href="our-work.html">Our work</a>
         </div>
-        <div>
-          <div class="footer-heading">Get Involved</div>
-          <ul class="footer-links">
-            <li><a href="partner.html">Partner With Us</a></li>
-            <li><a href="sponsors.html">Sponsors</a></li>
-            <li><a href="donate.html">Donate</a></li>
-            <li><a data-contact-email href="mailto:contact@thesecondserve.org">contact@thesecondserve.org</a></li>
-            <li data-contact-phone-row><a data-contact-phone href="#"></a></li>
-          </ul>
+        <div class="footer-col">
+          <h2>Get involved</h2>
+          <a href="partner.html">Partner with us</a>
+          <a href="sponsors.html">Sponsors</a>
+          <a href="donate.html">Donate</a>
+        </div>
+        <div class="footer-col">
+          <h2>Contact</h2>
+          <a href="mailto:thesecondservemichigan@gmail.com">Email us</a>
+          <a href="https://www.instagram.com/the_secondserve/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.tiktok.com/@the_secondserve" target="_blank" rel="noopener noreferrer">TikTok</a>
         </div>
       </div>
-      <div class="footer-bottom">
-        <span>Founded September 2026 &bull; Southwest Michigan</span>
-        <span>thesecondserve.org</span>
-      </div>
+      <p class="footer-bottom">Founded September 2026 in Portage, Michigan.</p>
     </div>
   </footer>
-
-  <script src="js/main.js"></script>
 </body>
 </html>

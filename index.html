@@ -4,200 +4,295 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Second Serve | Tennis Ball Recycling in Southwest Michigan</title>
-  <meta name="description" content="The Second Serve is a 501(c)(3) fiscally sponsored project collecting used tennis balls for free in Southwest Michigan and shipping them to RecycleBalls." />
-  <link rel="icon" type="image/png" href="assets/logo.png" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="description" content="The Second Serve collects used tennis balls from facilities in Southwest Michigan for free and ships them to RecycleBalls to be recycled." />
+  <meta name="theme-color" content="#1E382B" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self' https://hcb.hackclub.com" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800&display=swap" />
+  <link rel="stylesheet" href="css/site.css" />
+  <script src="js/site.js" defer></script>
+  <noscript><style>.reveal-up{opacity:1!important;transform:none!important;filter:none!important}.mobile-menu{display:none!important}</style></noscript>
 </head>
-<body>
-  <header class="site-header">
-    <div class="container nav-bar">
-      <a href="index.html" class="wordmark">
-        <span class="wordmark-dot" aria-hidden="true"></span>
-        <span>The Second Serve</span>
+<body class="is-home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="wrap header-bar">
+      <a href="index.html" class="brand" aria-label="The Second Serve home">
+        <span class="brand-name">The Sec<img src="assets/ball.svg" alt="" class="brand-o" width="20" height="20" />nd Serve</span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button>
-      <nav aria-label="Primary Navigation">
-        <ul class="nav-links" id="primary-menu">
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="founders.html">Founders</a></li>
-          <li><a href="our-work.html">Our Work</a></li>
-          <li><a href="partner.html">Partner With Us</a></li>
-          <li><a href="sponsors.html">Sponsors</a></li>
-          <li><a href="donate.html" class="nav-donate">Donate</a></li>
-        </ul>
+      <nav class="nav" aria-label="Primary">
+        <a href="about.html">About</a>
+        <a href="index.html#how">How it works</a>
+        <a href="our-work.html">Our work</a>
+        <a href="founders.html">Founders</a>
+        <a href="sponsors.html">Sponsors</a>
       </nav>
+      <div class="header-actions">
+        <a href="donate.html" class="btn btn-ghost btn-sm hide-sm">Donate</a>
+        <a href="partner.html" class="btn btn-ball btn-sm hide-sm">Partner with us</a>
+        <a href="donate.html" class="btn btn-ball btn-sm show-sm">Donate</a>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-btn>
+          <span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+          <span class="menu-label">Menu</span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" data-menu hidden>
+      <nav class="mobile-nav" aria-label="Mobile">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="index.html#how">How it works</a>
+        <a href="our-work.html">Our work</a>
+        <a href="founders.html">Founders</a>
+        <a href="sponsors.html">Sponsors</a>
+      </nav>
+      <div class="mobile-cta">
+        <a href="partner.html" class="btn btn-ball btn-block">Partner with us</a>
+        <a href="donate.html" class="btn btn-ghost btn-block">Donate</a>
+      </div>
     </div>
   </header>
 
-  <main>
-    <!-- Section 1: Hero -->
-    <section class="hero-section">
-      <div class="container">
+  <main id="main">
+    <!-- Hero: the court -->
+    <section class="hero court" data-hero>
+      <div class="court-lines" aria-hidden="true">
+        <div class="court-landscape"><i class="h" style="--x:3;--y:9;--l:94;--dl:0s"></i><i class="h" style="--x:3;--y:93;--l:94;--dl:0s"></i><i class="v" style="--x:3;--y:9;--l:84;--dl:0.05s"></i><i class="v" style="--x:97;--y:9;--l:84;--dl:0.05s"></i><i class="h" style="--x:3;--y:19;--l:94;--dl:0.15s"></i><i class="h" style="--x:3;--y:83;--l:94;--dl:0.15s"></i><i class="v" style="--x:27;--y:19;--l:64;--dl:0.3s"></i><i class="v" style="--x:73;--y:19;--l:64;--dl:0.3s"></i><i class="h" style="--x:27;--y:51;--l:46;--dl:0.45s"></i><i class="net v" style="--x:50;--y:9;--l:84"></i></div>
+        <div class="court-portrait"><i class="h" style="--x:5;--y:3;--l:90;--dl:0s"></i><i class="h" style="--x:5;--y:98;--l:90;--dl:0s"></i><i class="v" style="--x:5;--y:3;--l:95;--dl:0.05s"></i><i class="v" style="--x:95;--y:3;--l:95;--dl:0.05s"></i><i class="v" style="--x:13;--y:3;--l:95;--dl:0.15s"></i><i class="v" style="--x:87;--y:3;--l:95;--dl:0.15s"></i><i class="h" style="--x:13;--y:30;--l:74;--dl:0.3s"></i><i class="h" style="--x:13;--y:72;--l:74;--dl:0.3s"></i><i class="v" style="--x:50;--y:30;--l:42;--dl:0.45s"></i><i class="net h" style="--x:2;--y:51;--l:96"></i></div>
+      </div>
+      <div class="serve" aria-hidden="true" data-serve>
+        <div class="serve-y"><img src="assets/ball.svg" alt="" class="serve-ball" /></div>
+      </div>
+      <div class="wrap hero-grid">
         <div class="hero-copy">
-          <h1>Help every tennis ball earn a second serve.</h1>
-          <p>The Second Serve is a 501(c)(3) fiscally sponsored project that aims to reduce the amount of tennis balls that end up in a landfill. We collect tennis balls from participating facilities for free. Once collected, we pack and ship them to <a href="https://www.recycleballs.org/" target="_blank" rel="noopener noreferrer">RecycleBalls</a> where they are processed. We operate in Southwest Michigan and are in the process of expanding within Michigan.</p>
-          <div class="btn-group">
-            <a href="donate.html" class="btn btn-primary">Donate</a>
-            <a href="partner.html" class="btn btn-secondary">Partner With Us</a>
+          <h1 class="hero-title" data-split>Dead tennis balls don’t belong in a landfill.</h1>
+          <p class="hero-lede reveal" style="--d: .55s">We collect used balls from tennis facilities in Southwest Michigan for free and ship them to <a href="https://www.recycleballs.org/" target="_blank" rel="noopener noreferrer">RecycleBalls</a>, where they become playground surfaces, horse arena footing and new courts.</p>
+          <div class="hero-actions reveal" style="--d: .7s">
+            <a href="partner.html" class="btn btn-ball btn-lg btn-fx" data-magnet><span class="btn-fill" aria-hidden="true"></span><span class="btn-text">Partner your facility</span></a>
+            <a href="donate.html" class="btn btn-ghost btn-lg">Donate</a>
           </div>
+          <p class="hero-note reveal" style="--d: .85s">Student-run. Fiscally sponsored by HCB, a <span class="nowrap">501(c)(3)</span>.</p>
         </div>
-        <figure class="hero-media hero-photo-only">
-          <img src="assets/IMG_4252.jpg" alt="Aayush and Ryan with collected tennis balls" />
+        <figure class="hero-photo reveal" style="--d: .35s" data-tilt>
+          <img src="assets/hero-1400.jpg" srcset="assets/hero-800.jpg 800w, assets/hero-1400.jpg 1400w" sizes="(max-width: 860px) 92vw, 46vw" alt="Aayush and Ryan with two boxes of collected tennis balls" width="1400" height="1402" fetchpriority="high" />
         </figure>
       </div>
     </section>
 
-    <!-- Balls collected and shipped -->
-    <section class="counter-ribbon" aria-label="The Second Serve totals">
-      <div class="container">
-        <div class="impact-counters">
-          <div class="counter-box">
-            <span class="counter-value" data-counter="collected">1,150</span>
-            <span class="counter-label">Balls collected</span>
-          </div>
-          <div class="counter-box">
-            <span class="counter-value" data-counter="shipped">1,000</span>
-            <span class="counter-label">Balls shipped</span>
-          </div>
+    <!-- Numbers -->
+    <section class="section numbers" aria-label="Our numbers so far">
+      <div class="wrap stat-row">
+        <div class="stat reveal-up"><span class="stat-num" data-count="1150">1,150</span><span class="stat-label">balls collected</span></div>
+        <div class="stat reveal-up" style="--d: .08s"><span class="stat-num" data-count="1000">1,000</span><span class="stat-label">balls shipped to RecycleBalls</span></div>
+        <div class="stat reveal-up" style="--d: .16s"><span class="stat-num" data-count="3">3</span><span class="stat-label">partner facilities</span></div>
+        <div class="stat reveal-up" style="--d: .24s"><span class="stat-num" data-count="0" data-prefix="$">$0</span><span class="stat-label">cost to facilities</span></div>
+      </div>
+    </section>
+
+    <!-- Photo story -->
+    <section class="section story" aria-labelledby="story-title">
+      <div class="wrap story-head">
+        <h2 id="story-title" class="reveal-up">From the court to the recycler</h2>
+        <p class="reveal-up" style="--d: .08s">Every ball here was picked up, counted and packed by hand. These are the first 1,000.</p>
+      </div>
+      <div class="photo-marquee" data-photo-marquee>
+        <div class="photo-track">
+          <figure class="ph ph-tall"><img src="assets/packing.jpg" alt="Taping up a box marked 250 balls in the back of a car" loading="lazy" width="1200" height="1600" /></figure>
+          <figure class="ph"><img src="assets/boxes.jpg" alt="Five open boxes packed with used tennis balls" loading="lazy" width="1600" height="1200" /></figure>
+          <figure class="ph"><img src="assets/Balls1.jpg" alt="Boxes full of tennis balls seen from above" loading="lazy" width="1024" height="768" /></figure>
+          <figure class="ph"><img src="assets/Balls2.jpg" alt="Boxes of tennis balls being sorted for shipping" loading="lazy" width="1024" height="768" /></figure>
         </div>
       </div>
     </section>
 
-    <!-- Section 2: The Problem -->
-    <section class="section">
-      <div class="container">
-        <span class="eyebrow">The Problem</span>
-        <div class="problem-layout">
-          <div class="problem-main">
-            <div class="stat-callout">
-              <span class="problem-mark" aria-hidden="true">400+</span>
-              <div>
-                <div class="stat-callout-headline">Tennis balls can take over 400 years to break down in a landfill.</div>
-                <p class="stat-source">Source: <a href="https://www.recycleballs.org/" target="_blank" rel="noopener noreferrer">RecycleBalls</a> / United States Tennis Association (USTA) sustainability estimates on vulcanized rubber decomposition.</p>
+    <!-- Ways to help -->
+    <section class="section paths tint" aria-labelledby="paths-title">
+      <div class="wrap">
+        <h2 id="paths-title" class="reveal-up">Three ways to get your balls recycled</h2>
+        <div class="path-grid">
+          <a class="path reveal-up" href="partner.html">
+            <h3>You run a tennis facility</h3>
+            <p>We set up a collection spot, pick up your used balls and handle all the shipping. It costs you nothing.</p>
+            <span class="path-link">Partner with us</span>
+          </a>
+          <a class="path reveal-up" style="--d: .08s" href="#where">
+            <h3>You play tennis</h3>
+            <p>Drop your dead balls in the bin at a partner facility instead of the trash. Don’t see your club? Tell them about us.</p>
+            <span class="path-link">See where we collect</span>
+          </a>
+          <a class="path reveal-up" style="--d: .16s" href="sponsors.html">
+            <h3>You own a business</h3>
+            <p>Sponsors pay for shipping labels and boxes so facilities never have to. Your name goes on our site.</p>
+            <span class="path-link">Become a sponsor</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="section problem" aria-labelledby="problem-title">
+      <div class="wrap problem-grid">
+        <div>
+          <p class="big-stat reveal-up" aria-hidden="true"><span data-count="400">400</span>+ years</p>
+          <h2 id="problem-title" class="reveal-up" style="--d: .08s">That’s how long a tennis ball can take to break down in a landfill.</h2>
+          <p class="source reveal-up" style="--d: .12s">Source: RecycleBalls and USTA sustainability estimates.</p>
+        </div>
+        <div class="problem-copy">
+          <p class="reveal-up">Every time we played at a local park, we saw hundreds of dead balls piled outside the fences.</p>
+          <p class="reveal-up" style="--d: .08s">Throwing a dead ball away takes two seconds. Our goal is to make recycling it just as easy.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works: sticky story -->
+    <section class="section how court-dark" id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <h2 id="how-title" class="reveal-up">How it works</h2>
+        <div class="how-grid" data-steps>
+          <div class="how-media" aria-hidden="true">
+            <div class="how-frame">
+              <img src="assets/boxes.jpg" alt="" class="is-active" data-step-img="0" loading="lazy" />
+              <img src="assets/packing.jpg" alt="" data-step-img="1" loading="lazy" />
+              <div class="how-graphic" data-step-img="2">
+                <img src="assets/ball.svg" alt="" class="how-graphic-ball" />
+                <span>Playgrounds, horse footing and new courts</span>
               </div>
             </div>
           </div>
-          <div class="problem-story">
-            <article class="story-card">
-              <span class="story-index">01</span>
-              <p>It is incredibly easy for a tennis player to throw away their dead tennis balls. Our goal is to make it just as easy for them to recycle them.</p>
-            </article>
-            <article class="story-card">
-              <span class="story-index">02</span>
-              <p>Every time we visited a local park to play tennis, we saw hundreds of balls outside the fences. We needed to find a solution.</p>
-            </article>
+          <div class="steps-wrap">
+          <span class="steps-rail" aria-hidden="true"><span class="steps-fill" data-steps-fill></span></span>
+          <ol class="steps">
+            <li class="step is-active" data-step="0">
+              <span class="step-num">Step 1</span>
+              <h3>Collect</h3>
+              <p>A facility reaches out by email, call or text. Once their balls are used up, we pick them up for free.</p>
+              <img class="step-photo" src="assets/boxes.jpg" alt="Boxes of collected tennis balls" loading="lazy" />
+            </li>
+            <li class="step" data-step="1">
+              <span class="step-num">Step 2</span>
+              <h3>Ship</h3>
+              <p>We count the balls, pack them into boxes of 250 and ship them to RecycleBalls.</p>
+              <img class="step-photo" src="assets/packing.jpg" alt="Packing a box of 250 balls for shipping" loading="lazy" />
+            </li>
+            <li class="step" data-step="2">
+              <span class="step-num">Step 3</span>
+              <h3>Recycle</h3>
+              <p>RecycleBalls’ Green Machine strips the felt and grinds the rubber into material for playgrounds, horse footing and new tennis courts.</p>
+            </li>
+          </ol>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 3: How it Works -->
-    <section class="section section-tint">
-      <div class="container">
-        <h2>How it Works</h2>
-        <div class="steps-grid">
-          <article class="step-item">
-            <span class="step-number">01</span>
-            <div class="step-symbol" aria-hidden="true">↘</div>
-            <h3>Collection</h3>
-            <p>New facilities can participate by emailing, calling, or texting us. Once the facility has used their balls, we collect them for free.</p>
-          </article>
-          <article class="step-item">
-            <span class="step-number">02</span>
-            <div class="step-symbol" aria-hidden="true">→</div>
-            <h3>Shipping</h3>
-            <p>We count, pack, and ship the balls to RecycleBalls.</p>
-          </article>
-          <article class="step-item">
-            <span class="step-number">03</span>
-            <div class="step-symbol" aria-hidden="true">↗</div>
-            <h3>Recycling</h3>
-            <p>RecycleBalls uses their &ldquo;Green Machine&rdquo; to remove the outer fuzz and break down the inner rubber. The resulting product is suitable for playgrounds, horse footing, and even creating new tennis courts.</p>
-          </article>
-        </div>
+    <!-- Where we collect -->
+    <section class="section where" id="where" aria-labelledby="where-title">
+      <div class="wrap where-grid">
+        <h2 id="where-title" class="reveal-up">Where we collect</h2>
+        <ul class="where-list">
+          <li class="reveal-up"><img src="assets/ball.svg" alt="" width="22" height="22" /><span><strong>Maple YMCA</strong>Kalamazoo</span></li>
+          <li class="reveal-up" style="--d: .08s"><img src="assets/ball.svg" alt="" width="22" height="22" /><span><strong>Portage YMCA</strong>Portage</span></li>
+          <li class="reveal-up" style="--d: .16s"><img src="assets/ball.svg" alt="" width="22" height="22" /><span><strong>Portage Central High School</strong>Portage</span></li>
+        </ul>
       </div>
     </section>
 
-    <!-- Section 4: Our Impact -->
-    <section class="section">
-      <div class="container">
-        <h2>Our Impact</h2>
-
-        <div class="impact-details-grid">
-          <div class="detail-panel">
-            <h3>Participating facilities</h3>
-            <ol class="clean-list">
-              <li>Maple YMCA</li>
-              <li>Portage YMCA</li>
-              <li>Portage Central High School</li>
-            </ol>
-          </div>
-          <div class="detail-panel">
-            <h3>Shipment history</h3>
-            <ul class="clean-list">
-              <li>Two shipments completed.</li>
-              <li>1000 tennis balls shipped.</li>
-              <li>Four packages sent through UPS Ground.</li>
-            </ul>
-          </div>
+    <!-- Founders -->
+    <section class="section founders tint" aria-labelledby="founders-title">
+      <div class="wrap founders-grid">
+        <div class="founders-copy">
+          <h2 id="founders-title" class="reveal-up">Started by two players from Portage</h2>
+          <p class="reveal-up" style="--d: .08s">Aayush and Ryan, students at Portage Central, founded The Second Serve in September 2026 to make the sport they love more sustainable.</p>
+          <a class="text-link reveal-up" style="--d: .12s" href="founders.html">Meet the founders</a>
         </div>
-
-        <div class="photo-pair">
-          <figure class="photo-figure">
-            <img src="assets/Balls1.jpg" alt="Collected tennis balls" />
+        <div class="founder-cards">
+          <figure class="founder reveal-up" data-tilt>
+            <div class="founder-photo founder-initials" role="img" aria-label="Photo of Aayush coming soon">AP</div>
+            <figcaption><strong>Aayush Paul</strong><span>Media, outreach and shipping</span></figcaption>
           </figure>
-          <figure class="photo-figure">
-            <img src="assets/Balls2.jpg" alt="More collected tennis balls" />
+          <figure class="founder reveal-up" style="--d: .1s" data-tilt>
+            <img class="founder-photo" src="assets/ryan-800.jpg" alt="Ryan Fan" loading="lazy" width="800" height="1000" />
+            <figcaption><strong>Ryan Fan</strong><span>Finance and operations</span></figcaption>
           </figure>
         </div>
       </div>
     </section>
 
-    <!-- Section 5: Interested? -->
-    <section class="section section-tint">
-      <div class="container">
-        <h2>Interested?</h2>
-        <p>We encourage any interested facilities to reach out to learn more about our pickup program and installing collection bins.</p>
+    <!-- FAQ -->
+    <section class="section faq" aria-labelledby="faq-title">
+      <div class="wrap faq-grid">
+        <h2 id="faq-title" class="reveal-up">Questions</h2>
+        <div class="faq-list" data-faq>
+          <details open>
+            <summary>Does it cost my facility anything?</summary>
+            <div class="faq-body"><p>No. Pickup and shipping are free. Donations and sponsors cover our boxes and shipping labels.</p></div>
+          </details>
+          <details>
+            <summary>What happens to the balls?</summary>
+            <div class="faq-body"><p>RecycleBalls removes the felt and grinds the rubber into material for playgrounds, horse arenas and new tennis courts.</p></div>
+          </details>
+          <details>
+            <summary>Where do you collect?</summary>
+            <div class="faq-body"><p>Southwest Michigan for now, and we’re expanding within the state. If your facility is in Michigan, reach out.</p></div>
+          </details>
+          <details>
+            <summary>Who handles donations?</summary>
+            <div class="faq-body"><p>Donations go through HCB, our fiscal sponsor, which is part of The Hack Foundation, a 501(c)(3) nonprofit.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section class="cta-band">
+      <div class="wrap cta-grid">
+        <div>
+          <h2 class="reveal-up">Run a tennis facility in Michigan?</h2>
+          <p class="reveal-up" style="--d: .08s">Tell us roughly how many balls you go through. We’ll take it from there.</p>
+        </div>
+        <div class="cta-actions reveal-up" style="--d: .12s">
+          <a href="partner.html" class="btn btn-court btn-lg btn-fx" data-magnet><span class="btn-fill" aria-hidden="true"></span><span class="btn-text">Partner with us</span></a>
+          <a href="sms:+12693654194" class="btn btn-outline-court btn-lg">Text (269) 365-4194</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
+    <div class="wrap">
       <div class="footer-grid">
-        <div>
-          <div class="footer-brand">The Second Serve</div>
-          <p class="footer-text">A 501(c)(3) fiscally sponsored project reducing tennis ball landfill waste in Southwest Michigan.</p>
-          <p class="footer-text">Recycling partner: <a href="https://www.recycleballs.org/" target="_blank" rel="noopener noreferrer">RecycleBalls</a></p>
+        <div class="footer-brand">
+          <a href="index.html" class="brand" aria-label="The Second Serve home"><span class="brand-name">The Sec<img src="assets/ball.svg" alt="" class="brand-o" width="20" height="20" />nd Serve</span></a>
+          <p>Recycling tennis balls in Southwest Michigan. Recycling partner: <a href="https://www.recycleballs.org/" target="_blank" rel="noopener noreferrer">RecycleBalls</a>.</p>
         </div>
-        <div>
-          <div class="footer-heading">Pages</div>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About The Second Serve</a></li>
-            <li><a href="founders.html">The Founders</a></li>
-            <li><a href="our-work.html">Our Work</a></li>
-          </ul>
+        <div class="footer-col">
+          <h2>Learn</h2>
+          <a href="about.html">About</a>
+          <a href="founders.html">Founders</a>
+          <a href="our-work.html">Our work</a>
         </div>
-        <div>
-          <div class="footer-heading">Get Involved</div>
-          <ul class="footer-links">
-            <li><a href="partner.html">Partner With Us</a></li>
-            <li><a href="sponsors.html">Sponsors</a></li>
-            <li><a href="donate.html">Donate</a></li>
-            <li><a data-contact-email href="mailto:contact@thesecondserve.org">contact@thesecondserve.org</a></li>
-            <li data-contact-phone-row><a data-contact-phone href="#"></a></li>
-          </ul>
+        <div class="footer-col">
+          <h2>Get involved</h2>
+          <a href="partner.html">Partner with us</a>
+          <a href="sponsors.html">Sponsors</a>
+          <a href="donate.html">Donate</a>
+        </div>
+        <div class="footer-col">
+          <h2>Contact</h2>
+          <a href="mailto:thesecondservemichigan@gmail.com">Email us</a>
+          <a href="https://www.instagram.com/the_secondserve/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.tiktok.com/@the_secondserve" target="_blank" rel="noopener noreferrer">TikTok</a>
         </div>
       </div>
-      <div class="footer-bottom">
-        <span>Founded September 2026 &bull; Southwest Michigan</span>
-        <span>thesecondserve.org</span>
-      </div>
+      <p class="footer-bottom">Founded September 2026 in Portage, Michigan.</p>
     </div>
   </footer>
-
-  <script src="js/main.js"></script>
 </body>
 </html>
