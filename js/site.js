@@ -17,6 +17,7 @@
     counters();
     steps();
     faq();
+    copyButtons();
     if (!reduce && finePointer) { tilt(); magnet(); }
     if (!reduce) parallax();
     if (!reduce) window.addEventListener("load", () => setTimeout(serve, 650), { once: true });
@@ -162,6 +163,26 @@
     };
     window.addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
     update();
+  }
+
+  /* "Copy email" buttons: work even when the device has no email app for mailto: links */
+  function copyButtons() {
+    $$("[data-copy]").forEach((btn) => {
+      const label = btn.textContent;
+      btn.addEventListener("click", async () => {
+        const text = btn.dataset.copy;
+        let ok = false;
+        try { await navigator.clipboard.writeText(text); ok = true; } catch (e) {
+          const t = document.createElement("textarea");
+          t.value = text; t.setAttribute("readonly", ""); t.style.position = "fixed"; t.style.opacity = "0";
+          document.body.append(t); t.select();
+          try { ok = document.execCommand("copy"); } catch (e2) { ok = false; }
+          t.remove();
+        }
+        btn.textContent = ok ? "Email copied" : text;
+        setTimeout(() => (btn.textContent = label), 2200);
+      });
+    });
   }
 
   /* FAQ opens and closes with a smooth height animation */
