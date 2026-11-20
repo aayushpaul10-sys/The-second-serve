@@ -411,6 +411,9 @@ a.contact-card:hover { border-color: var(--court); transform: translateY(-3px); 
 .sponsor-empty, .donate-panel { display: grid; gap: 16px; justify-items: start; padding: clamp(28px, 4vw, 44px); border-radius: 24px; background: var(--tint); }
 .sponsor-empty { border: 2px dashed rgba(30, 56, 43, .35); background: transparent; }
 .sponsor-empty h3, .donate-panel h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); }
+.sponsor-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.sponsor-contact { font-size: .95rem; color: var(--muted); overflow-wrap: anywhere; }
+.sponsor-contact strong { color: var(--court); }
 .donate-note { font-size: .92rem; color: var(--muted); padding-top: 14px; border-top: 1.5px solid rgba(30, 56, 43, .15); }
 
 /* ---------- Page transitions ---------- */
