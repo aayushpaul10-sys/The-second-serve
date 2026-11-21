@@ -369,6 +369,7 @@ p { margin: 0; }
 
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
 .split-center { align-items: center; }
+.split > *, .contact-grid > *, .founder-big-grid > *, .faq-grid > * { min-width: 0; }
 .split-copy { display: grid; gap: 18px; justify-items: start; }
 .split-copy p { max-width: 32em; }
 .split-photo { margin: 0; overflow: hidden; border-radius: var(--radius); aspect-ratio: 4 / 5; max-height: 640px; }
@@ -397,7 +398,7 @@ p { margin: 0; }
 .contact-grid { display: grid; grid-template-columns: 1fr 1.4fr 1fr; gap: 16px; }
 .contact-card { display: grid; gap: 6px; align-content: start; padding: 26px; border-radius: var(--radius); background: var(--tint); color: var(--court); text-decoration: none; border: 1.5px solid transparent; transition: border-color .3s ease, transform .5s var(--ease); }
 a.contact-card:hover { border-color: var(--court); transform: translateY(-3px); }
-.contact-card strong { font-size: 1.12rem; overflow-wrap: break-word; }
+.contact-card strong { font-size: 1.12rem; overflow-wrap: anywhere; }
 
 .mini-steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(24px, 3vw, 40px); }
 .mini-steps li { border-top: 2px solid var(--ball); padding-top: 20px; }
